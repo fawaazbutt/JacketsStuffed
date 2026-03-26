@@ -1,0 +1,20 @@
+node_modules
+/dist
+/build
+/coverage
+
+# Logs
+*.log
+
+# Env files (keep examples committed if you use them)
+.env
+.env.*
+!.env.example
+
+# Vite cache / temp
+.vite
+
+# OS files
+.DS_Store
+Thumbs.db
+
