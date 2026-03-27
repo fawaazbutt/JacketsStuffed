@@ -3,18 +3,10 @@ export default function ProductShowcase() {
     <section className="px-6 mb-20" id="shop">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
         <div>
-          <h2 className="font-headline text-3xl font-bold text-on-surface">Artisan Picks</h2>
+          <h2 className="font-headline text-3xl font-bold text-on-surface">Top Picks</h2>
           <p className="text-on-surface-variant mt-2 font-body">
             Hand-selected pieces that trended on your feed this week.
           </p>
-        </div>
-        <div className="flex gap-2">
-          <span className="px-4 py-2 rounded-lg bg-surface-container-highest text-on-surface font-label text-sm font-semibold">
-            Home Decor
-          </span>
-          <span className="px-4 py-2 rounded-lg bg-surface-container text-on-surface-variant font-label text-sm font-semibold">
-            Jewelry
-          </span>
         </div>
       </div>
 

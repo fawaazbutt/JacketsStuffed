@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "The Digital Atelier | Curated Etsy Finds"
+  title: "Jackets Stuffed | Curated Etsy Finds"
 };
 
 export default function RootLayout({

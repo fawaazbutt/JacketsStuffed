@@ -7,7 +7,7 @@ export default function HeroSection() {
             alt="Hero Lifestyle"
             className="w-full h-full object-cover"
             data-alt="Elegant interior scene with handmade ceramic vases and woven textiles, bathed in soft morning sunlight through a window"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbWIlKnhDtePwMzqHe6l9aXe2Ucrfg-hBXOVh2BZv-MezlkBdFmSfXO_ka54H4pXXV31uYNsoaOTvpwQ4EXdjaDrnOdsOzXi3unCa6BTEcEpHNcPrPGg8OhpCOwzFvk3zJt82Go1lIKKFuisUq4Zt0cUcDwFpdNWtstf9ZGqzOsebKWrgChOpYuEElgFuNEFKq3ZRKBJArC-naZN3uameEq3lP9gm43bKESZp3S3REQNIMoWc1mS0hHw4jI5AEJKkIoJpJNmL-9l8x"
+            src="/hero-img.png"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#4b2409]/60 via-transparent to-transparent" />
         </div>
