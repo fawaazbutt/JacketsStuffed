@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^16.2.1",
+    "next": "latest",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -23,4 +23,3 @@
     "typescript": "^5.7.2"
   }
 }
-
