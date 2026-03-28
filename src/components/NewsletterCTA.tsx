@@ -17,8 +17,8 @@ export default function NewsletterCTA() {
       <div className="max-w-4xl mx-auto bg-primary-container rounded-[3rem] p-10 md:p-16 text-center text-on-primary-container relative overflow-hidden">
         <div className="absolute -top-10 -right-10 w-40 h-40 bg-on-primary-container/10 rounded-full blur-3xl" />
         <div className="relative z-10">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold mb-6">The Maker's Edit, in your inbox.</h2>
-          <p className="text-lg opacity-90 mb-10 max-w-xl mx-auto">
+          <h2 className="reveal font-headline text-3xl md:text-4xl font-bold mb-6">JacketStuffed's Weekly, in your inbox.</h2>
+          <p className="reveal delay-100 text-lg opacity-90 mb-10 max-w-xl mx-auto">
             Get early access to exclusive Etsy launches and seasonal collections from our top-rated makers.
           </p>
 

@@ -1,93 +1,141 @@
 export default function ProductShowcase() {
   return (
-    <section className="px-6 mb-20" id="shop">
+    <section className="px-6 mb-20" id="products">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
-        <div>
+        <div className="reveal">
           <h2 className="font-headline text-3xl font-bold text-on-surface">Top Picks</h2>
           <p className="text-on-surface-variant mt-2 font-body">
             Hand-selected pieces that trended on your feed this week.
           </p>
         </div>
+        <a
+          href="https://www.etsy.com/shop/JacketsStuffed"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="reveal delay-100 flex items-center gap-2 text-primary font-label font-bold hover:gap-3 transition-all"
+        >
+          View all on Etsy
+          <span className="material-symbols-outlined text-base">arrow_forward</span>
+        </a>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-        {/* Large Feature Card */}
-        <div className="md:col-span-8 group">
-          <div className="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-500">
-            <div className="relative h-[400px]">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+        {/* Left Large Feature Card */}
+        <div className="reveal md:col-span-4 group h-full">
+          <a
+            href="https://www.etsy.com/fi-en/listing/4412981082/mens-oversized-black-leather-bomber"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 h-full flex flex-col block"
+          >
+            <div className="relative flex-1 min-h-[400px]">
               <img
-                alt="Ceramic Set"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                data-alt="Handcrafted minimalist ceramic tea set with speckled glaze on a rustic wooden table, organic textures"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLb9W0qkR5dcPWI-qev_X26k_gKvak771IM1Sj21PBFefCNO_PAkYTQ4iHLrz6yH37Aq18Vb8gN9x7cUOv3AAJchSxQIRG_Z7cD2ApazJtSmiPPA3gMHmRz_5d0zxsYR62_xnrFQOF9217YyvDOj4r9B5I8UcnDbDIEKjxdc5SvQ7JA0G6WfIdAvZEqyc698k9qZZdmp4DrrKIfhNUzK4Xs0NkmbXreQlZHziRdeUVd3h_fiaGJbALYiNeLFbWLZG9PS-Wm2OGZeyP"
+                alt="Black Bomber Jacket"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                src="https://i.etsystatic.com/62758182/r/il/b34c90/7445897494/il_794xN.7445897494_gxo2.jpg"
               />
               <div className="absolute top-4 right-4">
-                <button
-                  type="button"
-                  className="w-10 h-10 rounded-full bg-white/90 backdrop-blur shadow-md flex items-center justify-center text-primary"
-                >
+                <div className="w-10 h-10 rounded-full bg-white/90 backdrop-blur shadow-md flex items-center justify-center text-primary">
                   <span
                     className="material-symbols-outlined"
                     style={{ fontVariationSettings: "'FILL' 1" }}
                   >
                     favorite
                   </span>
-                </button>
+                </div>
               </div>
             </div>
 
-            <div className="p-6 flex justify-between items-center">
+            <div className="p-6 flex flex-col gap-4">
               <div>
-                <h3 className="font-headline text-xl font-bold text-on-surface">Earthbound Ceramic Set</h3>
-                <p className="text-on-surface-variant font-label font-bold mt-1">$124.00</p>
+                <h3 className="font-headline text-lg font-bold text-on-surface">Black Bomber Jacket</h3>
+                <p className="text-on-surface-variant font-label font-bold mt-1">$199.00</p>
               </div>
-              <button
-                type="button"
-                className="bg-primary text-on-primary px-6 py-3 rounded-xl font-label font-bold transition-colors hover:bg-primary-dim"
-              >
+              <div className="w-full bg-primary text-on-primary px-6 py-3 rounded-xl font-label font-bold transition-colors hover:bg-primary-dim whitespace-nowrap text-center">
                 Shop on Etsy
-              </button>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
 
-        {/* Secondary Cards Stack */}
-        <div className="md:col-span-4 flex flex-col gap-6">
-          <div className="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm group">
-            <div className="relative h-[180px]">
+        {/* Center Secondary Cards Stack */}
+        <div className="md:col-span-4 flex flex-col gap-6 h-full">
+          <a
+            href="https://www.etsy.com/listing/4394140971/space-flight-suit-astronaut-costume-blue?ref=shop_home_feat_2&pro=1&logging_key=c8ddde43df03aeec8fdeffd9312b047e1c28fab8%3A4394140971"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="reveal delay-100 bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm group flex-1 flex flex-col block"
+          >
+            <div className="relative flex-1 min-h-[160px]">
               <img
-                alt="Gold Ring"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                data-alt="Macro shot of delicate gold layered rings with small ethical diamonds on a velvet background"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9zrYszHokbOWZM4cs8JYFJMosGxgVLkZ9xJ1-ZGri-4dt7dQov1OZDtaZaxER_ZUjm4NiE2M1NJkn8dJHeMZzuHtfaG-OWq9iwjhqNKGm6_S1a0ewcX0jW-q4f4SZN0QXx7DIQ14mcXJ9h93LoXjqQPF3hMZwIsem2WMe5IENyuMpBTloqiyDjbhyd6EoVIAkdJa20S8GkreJ1SYpwEmDiylJqCKGq4DNaUKKxQrzu9oNLPMalks_P0RDZK7mU1vmuis32zsyHC8N"
+                alt="Space Flight Suit"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="/space-suit.jpeg"
               />
             </div>
             <div className="p-4">
-              <h4 className="font-headline font-bold text-on-surface">Celestial Gold Ring</h4>
+              <h4 className="font-headline font-bold text-on-surface">Space Flight Suit</h4>
               <div className="flex justify-between items-center mt-3">
-                <span className="text-on-surface-variant font-label font-bold">$45.00</span>
-                <span className="material-symbols-outlined text-primary cursor-pointer">shopping_cart</span>
+                <span className="text-on-surface-variant font-label font-bold">$299.00</span>
+                <span className="material-symbols-outlined text-primary">shopping_cart</span>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div className="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm group">
-            <div className="relative h-[180px]">
+          <a
+            href="https://www.etsy.com/listing/4405293465/mens-black-leather-catsuit-muscle-fit?ls=r&ref=items-pagination-3&pro=1&content_source=096f2f6582365cbc99fdc47a0ba0efb1%253ALT647bcf8c3373592957aad6c6ddf67bd1d0d26179&logging_key=096f2f6582365cbc99fdc47a0ba0efb1%3ALT647bcf8c3373592957aad6c6ddf67bd1d0d26179"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="reveal delay-200 bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm group flex-1 flex flex-col block"
+          >
+            <div className="relative flex-1 min-h-[160px]">
               <img
-                alt="Linen Dress"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                data-alt="Soft beige sustainable linen dress hanging on a wooden hanger against a white textured wall"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC8onvEoWf7LoEPvc8RlZ8bLqn-5QpbwS-bQ3SKBO7kiLXSmRbfeGS7w3a3Mce7FXYe9cQBXL49dtG_WuyoRlEoI5Jz5Jzu0omDTuoATZqjJOSGZGKrvehmEeHQ6G7FF-D_naBT6UMUFBOhU8Ude-Dq_j8VGSaETdILtBojqVPMQC--uKD-aJqfEk0pQ62M4UJp4mNC1geFtK23rGmVVY6amp6cwaVADRVROoOKGR2pa69lk_MLJEOOf-ye14TwreIbW-rnRmtLjcw"
+                alt="Black Cat Suit"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="/black-cat-suit.jpeg"
               />
             </div>
             <div className="p-4">
-              <h4 className="font-headline font-bold text-on-surface">Sustainable Linen Midi</h4>
+              <h4 className="font-headline font-bold text-on-surface">Black Cat Suit</h4>
               <div className="flex justify-between items-center mt-3">
-                <span className="text-on-surface-variant font-label font-bold">$89.00</span>
-                <span className="material-symbols-outlined text-primary cursor-pointer">shopping_cart</span>
+                <span className="text-on-surface-variant font-label font-bold">$299.00</span>
+                <span className="material-symbols-outlined text-primary">shopping_cart</span>
               </div>
             </div>
-          </div>
+          </a>
+        </div>
+
+        {/* Right Large Feature Card */}
+        <div className="reveal delay-300 md:col-span-4 group h-full">
+          <a
+            href="https://www.etsy.com/listing/4472207140/mens-black-leather-safari-military-field?ref=shop_home_active_2&pro=1&logging_key=6b0c51153d9bfbca55e1616c2145463eff0c6caa%3A4472207140"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 h-full flex flex-col block"
+          >
+            <div className="relative flex-1 min-h-[400px]">
+              <img
+                alt="Black Military Field Jacket"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                src="https://i.etsystatic.com/62758182/r/il/5cb41b/7806852556/il_794xN.7806852556_oqml.jpg"
+              />
+              <div className="absolute top-4 right-4">
+                <div className="w-10 h-10 rounded-full bg-white/90 backdrop-blur shadow-md flex items-center justify-center text-primary">
+                  <span className="material-symbols-outlined">favorite</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 flex flex-col gap-4">
+              <div>
+                <h3 className="font-headline text-lg font-bold text-on-surface">Black Military Field Jacket</h3>
+                <p className="text-on-surface-variant font-label font-bold mt-1">$249.00</p>
+              </div>
+              <div className="w-full bg-primary text-on-primary px-6 py-3 rounded-xl font-label font-bold transition-colors hover:bg-primary-dim whitespace-nowrap text-center">
+                Shop on Etsy
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </section>

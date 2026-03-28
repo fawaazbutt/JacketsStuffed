@@ -5,6 +5,8 @@ export const metadata: Metadata = {
   title: "Jackets Stuffed | Curated Etsy Finds"
 };
 
+import RevealObserver from "../components/RevealObserver";
+
 export default function RootLayout({
   children
 }: Readonly<{
@@ -24,6 +26,7 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+        <RevealObserver />
         {children}
       </body>
     </html>
