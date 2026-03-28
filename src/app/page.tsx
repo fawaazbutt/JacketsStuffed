@@ -1,4 +1,3 @@
-import BottomNavBar from "../components/BottomNavBar";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import NewsletterCTA from "../components/NewsletterCTA";
@@ -21,7 +20,6 @@ export default function Page() {
       </main>
 
       <Footer />
-      <BottomNavBar />
     </>
   );
 }
