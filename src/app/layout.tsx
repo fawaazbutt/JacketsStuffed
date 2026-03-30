@@ -45,7 +45,7 @@ fbq('track', 'PageView');
         <img    height="1"
             width="1"
             style={{ display: "none" }}
-src="https://www.facebook.com/tr?id=1511495490318766&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1511495490318766&ev=PageView&noscript=1" alt=""
 />
         </noscript>
         <RevealObserver />
