@@ -1,26 +1,23 @@
-import Footer from "../components/Footer";
-import HeroSection from "../components/HeroSection";
-import NewsletterCTA from "../components/NewsletterCTA";
-import ProductShowcase from "../components/ProductShowcase";
-import CategorySection from "../components/CategorySection";
-import SocialProof from "../components/SocialProof";
-import TopNav from "../components/TopNav";
+import Header from './components/Header';
+import HeroSection from './components/HeroSection';
+import FeaturedProducts from './components/FeaturedProducts';
+import CategoriesShowcase from './components/CategoriesShowcase';
+import Testimonials from './components/Testimonials';
+import Newsletter from './components/Newsletter';
+import Footer from './components/Footer';
 
-export default function Page() {
-  return (
-    <>
-      <TopNav />
+const Page = () => {
+    return (
+        <div>
+            <Header />
+            <HeroSection />
+            <FeaturedProducts />
+            <CategoriesShowcase />
+            <Testimonials />
+            <Newsletter />
+            <Footer />
+        </div>
+    );
+};
 
-      <main className="pt-24 pb-32">
-        <HeroSection />
-        <ProductShowcase />
-        <CategorySection />
-        <SocialProof />
-        <NewsletterCTA />
-      </main>
-
-      <Footer />
-    </>
-  );
-}
-
+export default Page;
